@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAVEL</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo">
+                <a href="#" class="logo__link">
+                    <img src="./img/logo-img.svg" alt="" class="logo__img">
+                    <img src="./img/logo-text.svg" alt="" class="logo__text">
+                </a>
+            </div>
+            <nav class="navbar is-active">
+                
+            </nav>
+            <button class="hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+        </header>
+    </div>
+
+    <script>
+        // Look for .hamburger
+        var hamburger = document.querySelector(".hamburger");
+        var nav = document.querySelector(".navbar");
+        // On click
+        hamburger.addEventListener("click", function() {
+          // Toggle class "is-active"
+        hamburger.classList.toggle("is-active");
+        nav.classList.toggle("is-active");
+          // Do something else, like open/close menu
+        });
+      </script>
+
+</body>
+</html>
